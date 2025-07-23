@@ -1,5 +1,6 @@
 .godot/
 /android/
+.editorconfig
 
 *.import
 *.import/
