@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://bwxs5ls3efb1s"]
+[gd_scene load_steps=9 format=3 uid="uid://bwxs5ls3efb1s"]
 
+[ext_resource type="Script" uid="uid://eg8dawn36a2d" path="res://entities/player/player.gd" id="1_abrql"]
 [ext_resource type="Texture2D" uid="uid://carxtqh4ws4sy" path="res://entities/player/knight.png" id="1_symyc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_abrql"]
@@ -43,6 +44,7 @@ radius = 4.0
 height = 14.0
 
 [node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_abrql")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -12)
