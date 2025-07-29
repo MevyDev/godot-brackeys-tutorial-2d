@@ -171,9 +171,6 @@ sources/0 = SubResource("TileSetAtlasSource_dm7n7")
 
 [node name="Level1" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(4, 4)
-
 [node name="World" type="Node" parent="."]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="World"]
@@ -181,3 +178,6 @@ tile_map_data = PackedByteArray("AAD8/wIAAAAAAAAAAAD9/wIAAAAAAAAAAAD+/wIAAAAAAAA
 tile_set = SubResource("TileSet_d3n5x")
 
 [node name="Player" parent="." instance=ExtResource("1_qqytr")]
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(4, 4)
