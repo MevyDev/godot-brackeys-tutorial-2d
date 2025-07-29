@@ -50,6 +50,7 @@ script = ExtResource("1_abrql")
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_8fjmc")
 animation = &"idle"
+autoplay = "idle"
 frame = 2
 frame_progress = 0.380686
 
