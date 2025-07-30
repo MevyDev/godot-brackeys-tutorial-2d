@@ -178,6 +178,8 @@ tile_map_data = PackedByteArray("AAD8/wIAAAAAAAAAAAD9/wIAAAAAAAAAAAD+/wIAAAAAAAA
 tile_set = SubResource("TileSet_d3n5x")
 
 [node name="Player" parent="." instance=ExtResource("1_qqytr")]
+SPEED = 150
+JUMP_VELOCITY = -250
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(4, 4)
