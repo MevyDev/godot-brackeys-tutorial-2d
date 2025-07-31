@@ -231,7 +231,7 @@ JUMP_VELOCITY = -250
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(4, 4)
-limit_bottom = 230
+limit_bottom = 330
 limit_smoothed = true
 position_smoothing_enabled = true
 
