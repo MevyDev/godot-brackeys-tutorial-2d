@@ -57,7 +57,7 @@ shape = SubResource("CircleShape2D_dt443")
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_eaj7m")
 autoplay = "default"
-frame_progress = 0.897549
+frame_progress = 0.13872
 
 [node name="RayCastLeft" type="RayCast2D" parent="."]
 position = Vector2(0, -7)

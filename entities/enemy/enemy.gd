@@ -12,4 +12,4 @@ func _process(delta: float) -> void:
 		direction = 1
 	if(ray_cast_right.is_colliding()):
 		direction = -1
-	position.y += speed * delta * direction
+	position.x += speed * delta * direction
