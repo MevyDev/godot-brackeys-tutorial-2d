@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://q3rar41emau5"]
+[gd_scene load_steps=15 format=4 uid="uid://q3rar41emau5"]
 
 [ext_resource type="Texture2D" uid="uid://bxlpusgt2rex8" path="res://assets/sprites/world_tileset.png" id="1_0fil7"]
 [ext_resource type="PackedScene" uid="uid://bwxs5ls3efb1s" path="res://entities/player/player.tscn" id="1_qqytr"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://dv11yfuqkwbjq" path="res://entities/platform/platform.tscn" id="3_dm7n7"]
 [ext_resource type="PackedScene" uid="uid://cio0jmufa8ke0" path="res://entities/enemy/enemy.tscn" id="5_02o5q"]
 [ext_resource type="FontFile" uid="uid://br0fou8846q71" path="res://assets/fonts/PixelOperator8.ttf" id="6_icxts"]
+[ext_resource type="Script" uid="uid://w33ru4grivji" path="res://levels/level1/game_manager.gd" id="7_iqhro"]
+[ext_resource type="PackedScene" uid="uid://cw4m3imyu1v37" path="res://entities/coin/coin.tscn" id="8_ebna0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dm7n7"]
 texture = ExtResource("1_0fil7")
@@ -214,6 +216,10 @@ _data = {
 
 [node name="Level1" type="Node2D"]
 
+[node name="GameManager" type="Node2D" parent="."]
+unique_name_in_owner = true
+script = ExtResource("7_iqhro")
+
 [node name="World" type="Node" parent="."]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="World"]
@@ -260,3 +266,9 @@ offset_bottom = -24.0
 theme_override_fonts/font = ExtResource("6_icxts")
 theme_override_font_sizes/font_size = 8
 text = "press space to jump"
+
+[node name="Coin" parent="." instance=ExtResource("8_ebna0")]
+position = Vector2(125, -17)
+
+[node name="Coin2" parent="." instance=ExtResource("8_ebna0")]
+position = Vector2(225, -65)
