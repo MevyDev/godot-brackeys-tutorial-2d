@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=4 uid="uid://q3rar41emau5"]
+[gd_scene load_steps=13 format=4 uid="uid://q3rar41emau5"]
 
 [ext_resource type="Texture2D" uid="uid://bxlpusgt2rex8" path="res://assets/sprites/world_tileset.png" id="1_0fil7"]
 [ext_resource type="PackedScene" uid="uid://bwxs5ls3efb1s" path="res://entities/player/player.tscn" id="1_qqytr"]
 [ext_resource type="PackedScene" uid="uid://d0n8yao4kvl2t" path="res://entities/killzone/killzone.tscn" id="2_d3n5x"]
 [ext_resource type="PackedScene" uid="uid://dv11yfuqkwbjq" path="res://entities/platform/platform.tscn" id="3_dm7n7"]
 [ext_resource type="PackedScene" uid="uid://cio0jmufa8ke0" path="res://entities/enemy/enemy.tscn" id="5_02o5q"]
+[ext_resource type="FontFile" uid="uid://br0fou8846q71" path="res://assets/fonts/PixelOperator8.ttf" id="6_icxts"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dm7n7"]
 texture = ExtResource("1_0fil7")
@@ -250,3 +251,12 @@ autoplay = "move"
 [node name="Enemy" parent="." instance=ExtResource("5_02o5q")]
 position = Vector2(56, 48)
 speed = 30
+
+[node name="Label" type="Label" parent="."]
+offset_left = -19.0
+offset_top = -47.0
+offset_right = 106.0
+offset_bottom = -24.0
+theme_override_fonts/font = ExtResource("6_icxts")
+theme_override_font_sizes/font_size = 8
+text = "press space to jump"
